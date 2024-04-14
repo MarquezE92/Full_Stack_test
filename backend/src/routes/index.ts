@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { uploadSingleFile } from "../uploadMiddleware";
-import routeGetUsers from "./getUsers";
-import routePostFiles from "./postFiles";
+import { uploadSingleFile } from "../uploadMiddleware.ts";
+import routeGetUsers from "./getUsers.ts";
+import routePostFiles from "./postFiles.ts";
 
 const router = Router();
 

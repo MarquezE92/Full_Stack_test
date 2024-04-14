@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import sequelize from "../db";
+import sequelize from "../db.ts";
 
 const User = sequelize.define(
     'User',{
@@ -9,15 +9,12 @@ const User = sequelize.define(
         },
         city: {
           type: DataTypes.STRING,
-          allowNull: false
         },
         country: {
           type: DataTypes.STRING,
-          allowNull: false
         },
         favorite_sport: {
           type: DataTypes.STRING,
-          allowNull: false
         }
     },
     {

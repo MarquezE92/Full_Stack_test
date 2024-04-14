@@ -1,6 +1,5 @@
 import User from '../models/User.ts';
 import csvParser from 'csv-parser';
-import multer from 'multer';
 import fs from 'fs';
 
 
@@ -15,7 +14,7 @@ const routePostFiles = async(req, res)=>{
     try {
         const uploadedFile = req.file; 
         if (!uploadedFile) {
-          return res.status(400).json({ message: 'No file uploaded.' });
+          return res.status(500).json({ message: 'No file uploaded.' });
         }
     
         const results: CSVRow[] = [];

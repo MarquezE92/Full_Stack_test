@@ -3,7 +3,7 @@ import User from '../models/User.ts'
 
 
 const routeGetUsers = async(req, res)=>{
-    const searchData = req.query.q
+    const searchData: string = req.query.q
 
     try{
       let usersData;

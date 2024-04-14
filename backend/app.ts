@@ -1,8 +1,11 @@
 import express from 'express';
-import router from './src/routes/index.js'
+import router from './src/routes/index.ts'
 
 const app = express();
-app.use(express.json());
+app.use((req,res,next)=>{
+    res.header('Access-Control-Allow-Origin', 'http://localhost:4000')
+    next()
+});
 
 app.set('port', 3000);
 app.use('/', router);
