@@ -1,0 +1,125 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top:0;
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  animation-name: logo-spin;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(218,196,67,1));
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 5rem;
+}
+
+.searchInput {
+  background-color: #a5b3af;
+  height: 3.2rem;
+  width: 32rem;
+  border-radius: 22px;
+  border: 2px solid rgb(179, 179, 179);
+  padding: 0 0.6rem;
+}
+
+.searchInput:focus-within {
+  font-size: 1em;
+  color: rgb(39, 43, 42);
+  font-weight: 700;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.cardsContainer {
+  padding-top: 2rem;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.card {
+  width: 18rem;
+  padding: 0.5em;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.87);
+  color: rgb(39, 43, 42);
+  margin: 0.5rem;
+}
+
+.card:hover {
+  box-shadow: rgba(218,196,67,1) 0 0 7px;
+  text-shadow: rgba(13,173,125,0.3) 0 0 7px;
+}
+
+.inactiveButton {
+  color: rgb(179, 179, 179);
+  border: 2px solid rgb(179, 179, 179);
+  cursor: default;
+}
+.inactiveButton:hover {
+  border-color: rgb(179, 179, 179);
+}
+
+.custom-file-input {
+  color:rgba(255, 255, 255);
+  border-radius: 24px;
+  border: 2px solid rgba(255, 255, 255);
+  height: 2rem;
+  width: 14.5rem;
+  padding: 0.6em;
+  font-size: 1.4em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgb(39, 43, 42);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.custom-file-input-selected {
+  color:rgba(255, 255, 255);
+  border-radius: 24px;
+  height: 2rem;
+  width: 14.5rem;
+  padding: 0.6em;
+  font-size: 1.4em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgba(13,173,125);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.custom-file-input:hover {
+  border-color: rgba(13,173,125);
+}
