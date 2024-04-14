@@ -7,11 +7,12 @@ import { UserData } from './types';
 import axios from 'axios';
 import './App.css';
 
+
 function App() {
   const {getDataApi, dataApi} = useLoadData()
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [searchedWord, setSearchedWord] = useState<string>('');
-  
+
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>)=> {
       setSearchedWord(e.target.value);
       getDataApi(e.target.value)
@@ -28,7 +29,8 @@ function App() {
     const formData = new FormData();
     formData.append('file', selectedFile);
     try{
-      const response = await axios.post('http://localhost:3000/api/files', formData, {
+      const baseUrl = import.meta.env.VITE_REACT_APP_API ||  'http://localhost:3000'
+      const response = await axios.post(`${baseUrl}/api/files`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

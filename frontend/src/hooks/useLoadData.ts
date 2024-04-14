@@ -6,7 +6,8 @@ const useLoadData = ()=> {
     const [dataApi, setDataApi] = useState<UserData[]| []>([]);
 
     const getDataApi = (qParams: string|null)=> {
-        const url = qParams ? `http://localhost:3000/api/users?q=${qParams}` : 'http://localhost:3000/api/users'
+        const baseUrl = import.meta.env.VITE_REACT_APP_API || 'http://localhost:3000'
+        const url = qParams ? `${baseUrl}/api/users?q=${qParams}` : `${baseUrl}/api/users`
         axios.get(url)
         .then(response=>{
             return response.data
