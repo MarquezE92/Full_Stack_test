@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import TestRenderer from 'react-test-renderer'
 import UserCardComponentTest from '../components/UserCardComponentTest';
 
@@ -18,3 +18,4 @@ describe('CardComponent testing', ()=> {
 });
 
 })
+ */

@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 
 const UserCardComponentTest = ({name, city='?', country='?', favorite_sport='?'})=>{
     return(
@@ -11,4 +11,4 @@ const UserCardComponentTest = ({name, city='?', country='?', favorite_sport='?'}
     )
 }
 
-export default UserCardComponentTest
+export default UserCardComponentTest */

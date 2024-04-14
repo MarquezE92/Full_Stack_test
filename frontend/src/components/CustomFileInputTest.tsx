@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+/* import React, { useRef } from 'react';
 
 const CustomFileInputTest = ({ onChange, isOn }) => {
     const ref = useRef(null);
@@ -15,4 +15,4 @@ const CustomFileInputTest = ({ onChange, isOn }) => {
     );
   };
 
-  export default CustomFileInputTest
+  export default CustomFileInputTest */
