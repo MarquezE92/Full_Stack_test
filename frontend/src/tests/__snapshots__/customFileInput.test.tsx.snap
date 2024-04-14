@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonComponent testing ButtonComponent renders correctly 1`] = `
+<div
+  className="custom-file-input-selected"
+  onClick={[Function]}
+>
+  <input
+    accept=".csv"
+    onChange={[MockFunction]}
+    style={
+      {
+        "display": "none",
+      }
+    }
+    type="file"
+  />
+  File Selected
+</div>
+`;
+
+exports[`Custom input testing Custom input renders correctly 1`] = `
+<div
+  className="custom-file-input-selected"
+  onClick={[Function]}
+>
+  <input
+    accept=".csv"
+    onChange={[MockFunction]}
+    style={
+      {
+        "display": "none",
+      }
+    }
+    type="file"
+  />
+  File Selected
+</div>
+`;

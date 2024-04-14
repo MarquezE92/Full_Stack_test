@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardComponent testing CardComponent renders correctly 1`] = `
+<div
+  className="card"
+>
+  <h2>
+    Estefanía Márquez
+  </h2>
+  <h3>
+    City: 
+    Mar del Plata
+  </h3>
+  <h3>
+    Country: 
+    Argentina
+  </h3>
+  <h3>
+    Favorite sport: 
+    ?
+  </h3>
+</div>
+`;
